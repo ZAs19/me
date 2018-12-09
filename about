@@ -1,0 +1,25 @@
+<HTML lang="RU">
+<HEAD>
+    <TITLE>
+        Домашнее задание PHP № 1
+    </TITLE>
+</HEAD>
+<?php
+$userName= 'Артём';
+$userN= '26';
+$userMail= 'QQQQQ@gmail.com';
+$userCity= 'Екатеринбург';
+$userAbout= 'Ведущий специалист поддержки СУ ';
+?>
+<BODY>
+<h1>Страница пользователя <?= $userName ?> </h1>
+<?php
+echo "Имя: ", $userName, "<BR>";
+echo "Возраст: ", $userN, "<BR>";
+echo "Адрес электронной почты: ", "<a href='".$userMail."'>$userMail</a>", "<BR>";
+echo "Город: ", $userCity, "<BR>";
+echo "О себе: ", $userAbout, "<BR>";
+
+?>
+</BODY>
+</HTML>
