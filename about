@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <HTML lang="RU">
 <HEAD>
     <TITLE>
@@ -14,12 +15,13 @@ $userAbout= 'Ведущий специалист поддержки СУ ';
 <BODY>
 <h1>Страница пользователя <?= $userName ?> </h1>
 <?php
-echo "Имя: ", $userName, "<BR>";
-echo "Возраст: ", $userN, "<BR>";
-echo "Адрес электронной почты: ", "<a href='".$userMail."'>$userMail</a>", "<BR>";
-echo "Город: ", $userCity, "<BR>";
-echo "О себе: ", $userAbout, "<BR>";
+echo "<p>Имя: $userName</p>";
+echo "<p>Возраст: $userN</p>";
+echo "<p>Адрес электронной почты: <a href=\"mailto:$userMail\">$userMail</a></p>";
+echo "<p>Город: $userCity</p>";
+echo "<p>О себе: $userAbout</p>";
 
 ?>
 </BODY>
 </HTML>
+
